@@ -1,16 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First name:</strong>
-  <%= @travel.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @travel.last_name %>
-</p>
-
-<p>
   <strong>Location:</strong>
   <%= @travel.location %>
 </p>
@@ -21,4 +11,5 @@
 </p>
 
 <%= link_to 'Edit', edit_travel_path(@travel) %> |
-<%= link_to 'Back', travels_path %>
+
+<%= link_to 'Home', travels_path %>
