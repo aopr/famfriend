@@ -1,10 +1,13 @@
 class TravelsController < ApplicationController
   before_action :set_travel, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:create, :new]
 
   # GET /travels
   # GET /travels.json
   def index
-    @travels = Travel.all
+    # @travels = Travel.all
+    @been = Travel.where(category: "been")
+    @go = Travel.where(category: "go")
   end
 
   # GET /travels/1
@@ -25,7 +28,7 @@ class TravelsController < ApplicationController
   # POST /travels.json
   def create
     @travel = Travel.new(travel_params)
-
+    @travel.user_id = @user.id
     respond_to do |format|
       if @travel.save
         format.html { redirect_to @travel, notice: 'Travel was successfully created.' }
@@ -67,8 +70,12 @@ class TravelsController < ApplicationController
       @travel = Travel.find(params[:id])
     end
 
+    def set_user
+      @user = User.find(params[:user_id])
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def travel_params
-      params.require(:travel).permit(:first_name, :last_name, :location, :image_url)
+      params.require(:travel).permit(:location, :image_url, :category)
     end
 end
