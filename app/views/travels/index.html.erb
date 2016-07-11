@@ -23,7 +23,7 @@
         <td><%= travel.location %></td>
         <td><img src="<%= travel.image_url %>" height="20%"></td>
 
-            <%if current_user.id == travel.user_id%>
+            <%if !current_user.nil? && current_user.id == travel.user_id%>
                 <td><%= link_to 'Show', travel %></td>
                 <td><%= link_to 'Edit', edit_travel_path(travel) %></td>
                 <td><%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -52,7 +52,7 @@
         <td><%= travel.location %></td>
         <td><img src="<%= travel.image_url %>" height="20%"></td>
 
-            <%if current_user.id == travel.user_id%>
+           <%if !current_user.nil? && current_user.id == travel.user_id%>
                 <td><%= link_to 'Show', travel %></td>
                 <td><%= link_to 'Edit', edit_travel_path(travel) %></td>
                 <td><%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
