@@ -1,3 +1,58 @@
 /*Place all the styles related to the users controller here.
 They will automatically be included in application.css.
 You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.travels.new {
+  background-image: url("https://images.unsplash.com/photo-1445113994771-ff37299682db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=62e175ccac499ed6854080e705ee872a");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.travels.index {
+  background-image: url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5af0e68c41241379a320d9832b7232ce");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.travels.show {
+  background-image: url("https://images.unsplash.com/photo-1444360150727-329ab2c260a0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8c5653a2360cb700a7d8dd16cd1df4de");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.travels.edit {
+  background-image: url("https://images.unsplash.com/photo-1446470160026-8529a28f0f84?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4af713fb375f54674f26d61ac0ade48d");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.sessions.new {
+  background-image: url("https://images.unsplash.com/photo-1466838931486-92f3b5ff31a6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a4da5f71b9af2d1081fa68f97771f446");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+
+.users.new {
+  background-image: url("https://images.unsplash.com/photo-1461319805560-d7d182e9fbbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f1510e1f412b59b3ee7c3a9296cd7ef9");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
