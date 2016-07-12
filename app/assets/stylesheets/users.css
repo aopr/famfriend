@@ -78,3 +78,19 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.travels.been div#frame {
+    background: url("http://img11.deviantart.net/a5f8/i/2012/267/5/6/corkboard_act1_by_infinityunbound-d5fro0i.png") no-repeat;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    margin: auto;
+}
+
+.travels.go div#frame {
+    background: url("http://img11.deviantart.net/a5f8/i/2012/267/5/6/corkboard_act1_by_infinityunbound-d5fro0i.png") no-repeat;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    margin: auto;
+}

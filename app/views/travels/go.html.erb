@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <br><br>
+
+<div id='frame'>
+
 <tbody>
 
   <p> Where I Want To Travel </p>
@@ -28,6 +31,7 @@
 </tbody>
 </table>
 
+</div>
 
 <% if current_user %>
 <%= link_to 'New Travel', new_user_travel_path(current_user) %>
