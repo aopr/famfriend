@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'static/welcome'
 
   get 'been' => 'travels#been'
+
   get 'go' => 'travels#go'
 
   get 'sessions/new'
