@@ -6,8 +6,15 @@ class TravelsController < ApplicationController
   # GET /travels.json
   def index
     # @travels = Travel.all
+  end
+
+  def been
     @been = Travel.where(category: "been")
+  end
+
+  def go
     @go = Travel.where(category: "go")
+
   end
 
   # GET /travels/1
