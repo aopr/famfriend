@@ -23,11 +23,47 @@ body {
 }
 
 .static.welcome div#frame {
-    background: url("http://img11.deviantart.net/a5f8/i/2012/267/5/6/corkboard_act1_by_infinityunbound-d5fro0i.png") no-repeat;
-    width: 600px;
-    height: 400px;
+  background: url("http://img11.deviantart.net/a5f8/i/2012/267/5/6/corkboard_act1_by_infinityunbound-d5fro0i.png") no-repeat;
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  margin: auto;
+  text-align: center;
+}
+
+div#frame h1 {
+  padding-top: 10vh;
+  font-size: 7vh;
+  font-family: 'The Girl Next Door', cursive;
+}
+
+.note {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  float: left;
+  margin: 3vw 30vh;
+  border: 1px solid rgba(0,0,0,.25);
+}
+
+.picture_been {
+    transform: rotate(3.5deg);
+    -webkit-transform: rotate(3.5deg);
+    -moz-transform: rotate(3.5deg);
+    background-image: url("https://images.unsplash.com/photo-1462146449396-2d7d4ba877d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c219903b4e38c5b8109e11a3d33b9748");
     background-size: cover;
-    margin: auto;
+    background-repeat: no-repeat;
+}
+
+.picture_go {
+    transform: rotate(-3.5deg);
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    background-image: url("https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5c19cf9f7b4200450740c2f5ed2e1027");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .travels.show {
