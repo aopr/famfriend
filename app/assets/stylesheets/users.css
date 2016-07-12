@@ -7,6 +7,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: scroll;
 }
 .travels.new {
   background-image: url("https://images.unsplash.com/photo-1445113994771-ff37299682db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=62e175ccac499ed6854080e705ee872a");
