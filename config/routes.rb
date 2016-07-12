@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
+  get 'static/welcome'
+
+  get 'been' => 'travels#been'
+  get 'go' => 'travels#go'
+
   get 'sessions/new'
 
   get 'sessions/create'
 
   get 'sessions/destroy'
 
-  root 'travels#index'
-  
+  root 'static#welcome'
+
   get '/secret' => 'page#secret'
 
   get '/register' => 'users#new'

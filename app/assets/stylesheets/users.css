@@ -1,13 +1,11 @@
-/*Place all the styles related to the users controller here.
-They will automatically be included in application.css.
-You can use Sass (SCSS) here: http://sass-lang.com/*/
-
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: scroll;
 }
+
 .travels.new {
   background-image: url("https://images.unsplash.com/photo-1445113994771-ff37299682db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=62e175ccac499ed6854080e705ee872a");
   background-size: cover;
@@ -22,6 +20,14 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}
+
+.travels.index div#frame {
+    background: url("http://img11.deviantart.net/a5f8/i/2012/267/5/6/corkboard_act1_by_infinityunbound-d5fro0i.png") no-repeat;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    margin: auto;
 }
 
 .travels.show {
@@ -47,7 +53,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
 
 .users.new {
   background-image: url("https://images.unsplash.com/photo-1461319805560-d7d182e9fbbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f1510e1f412b59b3ee7c3a9296cd7ef9");
