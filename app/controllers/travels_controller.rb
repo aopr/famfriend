@@ -66,7 +66,7 @@ class TravelsController < ApplicationController
   def destroy
     @travel.destroy
     respond_to do |format|
-      format.html { redirect_to travels_url, notice: 'Travel was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'Travel was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
