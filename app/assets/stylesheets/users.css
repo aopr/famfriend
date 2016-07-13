@@ -37,7 +37,7 @@ div#frame h1 {
 }
 
 
-.picture-been img {
+.picture-been img{
     transform: rotate(3.5deg);
     -webkit-transform: rotate(3.5deg);
     -moz-transform: rotate(3.5deg);
@@ -51,6 +51,12 @@ div#frame h1 {
     -moz-transform: rotate(-3.5deg);
     width: 180px;
     height: 180px;
+}
+
+div.img{
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 3px #000000;
 }
 
 .travels.show {
@@ -116,6 +122,10 @@ div#frame h1 {
     background-size: 100% 100%;
     padding-left: 4vw;
     margin: 0 2em;
+}
+
+div.desc{
+  background: rgb(252, 250, 241);
 }
 
 .board-title {
