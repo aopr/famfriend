@@ -1,32 +1,34 @@
-<%= form_for([@user, @travel], :html => {:class => 'center-nav'})  do |f| %>
-  <% if travel.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(travel.errors.count, "error") %> prohibited this travel from being saved:</h2>
+<div id="login_section">
+  <%= form_for([@user, @travel], :html => {:class => 'center-nav'})  do |f| %>
+    <% if travel.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(travel.errors.count, "error") %> prohibited this travel from being saved:</h2>
 
-      <ul>
-      <% travel.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% travel.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :location, class: "btn-white" %>
+      <%= f.text_field :location, class: "form-control" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :category, class: "btn-white" %>
+      <%= f.select :category, [["Where I've traveled", "been"],["Where I want to travel", "go"]] %>
+    </div>
+
+    <div class="field">
+      <%= f.label :image_url, class: "btn-white" %>
+      <%= f.text_area :image_url, class: "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit 'Create Travel', class: "btn btn-success btn-white" %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :location, class: "btn-white" %>
-    <%= f.text_field :location, class: "form-control" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :category, class: "btn-white" %>
-    <%= f.select :category, [["Where I've traveled", "been"],["Where I want to travel", "go"]] %>
-  </div>
-
-  <div class="field">
-    <%= f.label :image_url, class: "btn-white" %>
-    <%= f.text_area :image_url, class: "form-control" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit 'Create Travel', class: "btn btn-success btn-white" %>
-  </div>
-<% end %>
+</div>
