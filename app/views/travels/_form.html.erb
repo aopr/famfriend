@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :location %>
-    <%= f.text_field :location %>
+    <%= f.label :location, class: "btn-white" %>
+    <%= f.text_field :location, class: "form-control" %>
   </div>
 
   <div class="field">
-    <%= f.label :category %>
+    <%= f.label :category, class: "btn-white" %>
     <%= f.select :category, [["Where I've traveled", "been"],["Where I want to travel", "go"]] %>
   </div>
 
   <div class="field">
-    <%= f.label :image_url %>
-    <%= f.text_area :image_url %>
+    <%= f.label :image_url, class: "btn-white" %>
+    <%= f.text_area :image_url, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Create Travel', class: "btn btn-success btn-white" %>
   </div>
 <% end %>
