@@ -1,27 +1,23 @@
-<p id="notice"><%= notice %></p>
-
-<br><br>
-
 <div id='frame'>
 
-  <p> Where I've Traveled </p>
+<h1 class="board-title"> Where I've Traveled </h1>
 
-        <% @been.reverse.each do |travel| %>
-        <div class="img">
-          <img src="<%= travel.image_url %>" height="20%">
-          <div class="desc">
-            <%= travel.location %>
-            <br>
-            <%= travel.user.name %>
-            <br>
-               <%if !current_user.nil? && current_user.id == travel.user_id%>
-                    <%= link_to 'Show', travel %>
-                    <%= link_to 'Edit', edit_travel_path(travel) %>
-                    <%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %>
-                <%end%>
-          </div>
-        </div>
-        <% end %>
+  <% @been.reverse.each do |travel| %>
+  <div class="img">
+    <img src="<%= travel.image_url %>" height="20%">
+    <div class="desc">
+      <%= travel.location %>
+      <br>
+      <%= travel.user.name %>
+      <br>
+      <%if !current_user.nil? && current_user.id == travel.user_id%>
+      <%= link_to 'Show', travel %>
+      <%= link_to 'Edit', edit_travel_path(travel) %>
+      <%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%end%>
+    </div>
+  </div>
+  <% end %>
 </div>
 
 <% if current_user %>
