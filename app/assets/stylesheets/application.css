@@ -21,6 +21,19 @@
   padding: 1%;
   border-radius: 8px;
 }
+
+.center-nav{
+  margin-top: 15px;
+  background: rgba(0,0,0,.5);
+  display: inline-block;
+  color: white;
+  padding: 1%;
+  border-radius: 8px;
+}
+#login_section{
+  width: 100%;
+  text-align: center;
+}
 .top-left-nav > p {
   margin: 0;
 }
