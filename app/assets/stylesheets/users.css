@@ -33,7 +33,14 @@ body {
 
 div#frame h1 {
   padding-top: 10vh;
-  font-family: 'The Girl Next Door', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 300%;
+  color: white;
+  text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 
@@ -121,7 +128,7 @@ div.img{
     height: 90vh;
     background-size: 100% 100%;
     padding-left: 4vw;
-    margin: 0 2em;
+    margin: 0 2em;    
 }
 
 div.desc{

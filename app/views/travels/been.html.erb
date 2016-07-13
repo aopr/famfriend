@@ -22,8 +22,8 @@
 
 <div class="top-left-nav">
   <% if current_user %>
-  <%= link_to 'New Travel', new_user_travel_path(current_user), class: "btn btn-success btn-white" %>
+  <%= link_to 'New Travel', new_user_travel_path(current_user) %>
   <%end%>
 
-  <%= link_to 'Home', '/', class: "btn btn-info btn-white"  %>
+  <%= link_to 'Home', '/' %>
 </div>
