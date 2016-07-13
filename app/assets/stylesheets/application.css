@@ -24,10 +24,15 @@
 .top-left-nav > p {
   margin: 0;
 }
+
 .btn-white {
   color: white;
 }
 
 .btn-white:visited {
   color: white;
+}
+
+#travel_category {
+  size: "3";
 }
