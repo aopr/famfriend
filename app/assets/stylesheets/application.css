@@ -42,6 +42,10 @@
   color: white;
 }
 
+.btn-black {
+  color: black;
+}
+
 .btn-white:visited {
   color: white;
 }

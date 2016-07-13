@@ -9,7 +9,9 @@
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"%>
 </head>
 
+
 <body class="<%= controller_name %> <%= action_name %>">
+
 
   <div class="container">
     <div class="top-left-nav">
@@ -19,6 +21,10 @@
       <p><%= link_to 'Login', login_path, class: "btn btn-success btn-white" %> | <%= link_to 'Register', register_path, class: 'btn btn-info btn-white' %></p>
       <% end %>
     </div>
+
+<p id= "app_title">CorkBoard</p>
+
+<br>
 
     <%= yield %>
 
