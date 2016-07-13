@@ -149,6 +149,30 @@ body {
   line-height: normal;
 }
 
-#new_trav_home{
-
+#new-trav-home{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 18px;
+  margin-left: 35px;
+  display: flex;
+  text-align: justify;
+  float: left;
 }
+/*
+.new-trav-home-shad{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 18px;
+  margin-left: 35px;
+  display: flex;
+  text-align: justify;
+  float: left;
+  margin-top: 15px;
+  background: rgba(0,0,0,.5);
+  display: inline-block;
+  color: white;
+  padding: 1%;
+  border-radius: 8px;
+}*/
