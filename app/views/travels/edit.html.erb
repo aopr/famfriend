@@ -2,5 +2,9 @@
 
 <%= render 'form', travel: @travel %>
 
-<%= link_to 'Show', @travel %> |
-<%= link_to 'Home', '/' %>
+<div class="new-trav-home-shad">
+  <div id="new-trav-home">
+    <%= link_to 'Show', @travel, class: "btn btn-success btn-white" %> |
+    <%= link_to 'Home', '/', class: "btn btn-info btn-white" %>
+  </div>
+</div>
