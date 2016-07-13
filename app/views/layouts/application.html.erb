@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Famfriend</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Famfriend</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"%>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"%>
+</head>
 
-  <body class="<%= controller_name %> <%= action_name %>">
+<body class="<%= controller_name %> <%= action_name %>">
 
-    <div class="container">
-      <div class="top-left-nav">
-        <% if current_user %>
-          <p>Signed in as <strong><%= current_user.name %></strong> | <%= link_to "Logout", logout_path, class: "btn btn-danger btn-white" %></p>
-        <% else %>
-          <p><%= link_to 'Login', login_path, class: "btn btn-success btn-white" %> | <%= link_to 'Register', register_path, class: 'btn btn-info btn-white' %></p>
-        <% end %>
-      </div>
-
-      <%= yield %>
-
+  <div class="container">
+    <div class="top-left-nav">
+      <% if current_user %>
+      <p>Signed in as <strong><%= current_user.name %></strong> | <%= link_to "Logout", logout_path, class: "btn btn-danger btn-white" %></p>
+      <% else %>
+      <p><%= link_to 'Login', login_path, class: "btn btn-success btn-white" %> | <%= link_to 'Register', register_path, class: 'btn btn-info btn-white' %></p>
+      <% end %>
     </div>
-  </body>
+
+    <%= yield %>
+
+  </div>
+</body>
 </html>
